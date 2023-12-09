@@ -18,7 +18,11 @@ const routes: Routes = [
   {
     path: 'privado',
     loadChildren: () => import('./privado/privado.module').then( m => m.PrivadoPageModule)
+  },  {
+    path: 'registrarse',
+    loadChildren: () => import('./registrarse/registrarse.module').then( m => m.RegistrarsePageModule)
   }
+
 ];
 
 @NgModule({
