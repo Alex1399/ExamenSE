@@ -1,0 +1,7 @@
+{
+  "name": "SEAF",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
