@@ -1,0 +1,30 @@
+ion-radio-group {
+    background-color: #df472c;
+    border: 2px solid #8d1966;
+    border-radius: 8px;
+    display: block; /* Cambia el display a bloque para que ocupe el ancho completo */
+    padding: 10px; /* Añade un poco de espacio interior para mayor claridad */
+    }
+    
+    ion-radio {
+    --background-checked: #007650; 
+    --border-radius: 4px;
+    --height: 30px;
+    --width: 30px;
+    display: block; /* Cambia el display a bloque para que aparezca en una línea separada */
+    margin-bottom: 10px; /* Añade un espacio entre las opciones */
+    }
+    
+    ion-radio .radio-icon {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-clip: content-box;
+    border: 2px solid #007bff;
+    }
+    
+    ion-label {
+    float: left;
+    }
+        
+  
