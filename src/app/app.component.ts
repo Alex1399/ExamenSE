@@ -9,6 +9,7 @@ export class AppComponent {
   public appPages = [
     { title: 'Registrarse', url: '/registrarse', icon: 'enter' },
     { title: 'Encuesta', url: '/ingreso', icon: 'people' },
+    { title: 'Formulario', url: '/privado', icon: 'people' },
   ];
   
   constructor() {}

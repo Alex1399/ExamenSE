@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';  // Agrega estas líneas
+
+
+
 
 import { PrivadoPageRoutingModule } from './privado-routing.module';
 
@@ -13,8 +15,10 @@ import { PrivadoPage } from './privado.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    PrivadoPageRoutingModule
+    FormsModule,  // Agrega esta línea
+    ReactiveFormsModule,  // Agrega esta línea
+    PrivadoPageRoutingModule,
   ],
-  declarations: [PrivadoPage]
+  declarations: [PrivadoPage],
 })
 export class PrivadoPageModule {}
