@@ -1,16 +1,14 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Privado
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-toolbar>
+  <ion-title>
+    Encuesta
+  </ion-title>
+</ion-toolbar>
 
 <ion-content [fullscreen]="true">
   <div class="ion-padding">
     <ion-label>Selecciona una pregunta</ion-label>
     <ion-item>
-      <ion-select placeholder="pregunta" [(ngModel)]="preguntaSeleccionadaId" (ionChange)="onPreguntaChange()">
+      <ion-select placeholder="pregunta" (ionChange)="selectPregunta($event)" interface="alert">
         <ion-select-option *ngFor="let pregunta of arrayPregunta" [value]="pregunta.id">
           {{ pregunta.nombre }}
         </ion-select-option>
@@ -18,21 +16,26 @@
     </ion-item>
   </div>
 
-  <div *ngIf="preguntaSeleccionadaId">
-    <ion-label>Opciones de balones:</ion-label>
-    <ion-list>
-      <ion-item *ngFor="let balon of pregunta.arrayBalones">
-        {{ balon.balon }}
-        <ng-container *ngIf="balon.mesa && balon.mesa.length > 0">
-          <ion-label></ion-label>
-          <ion-select [(ngModel)]="opcionMesa" multiple="true">
-            <ion-select-option *ngFor="let opcion of balon.mesa">
-             {{ opcion }}
-            </ion-select-option>
-          </ion-select>
-        </ng-container>
-      </ion-item>
-    </ion-list>   
+  <div class="ion-padding">
+    <ion-label>Selecciona una bola</ion-label>
+    <ion-item>
+      <ion-select placeholder="balon" [(ngModel)]="selectIdBalon" (ionChange)="selectBalon($event)" interface="alert">
+        <ion-select-option *ngFor="let balon of arrayBalon" [value]="balon.id">
+          {{ balon.nombre }}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+  </div>
+
+  <div class="ion-padding">
+    <ion-label>Selecciona una opcion</ion-label>
+    <ion-item>
+      <ion-select placeholder="mesa" [(ngModel)]="selectIdMesa" (ionChange)="selectMesa($event)" interface="alert">
+        <ion-select-option *ngFor="let mesa of arrayMesa" [value]="mesa.id">
+          {{ mesa.nombre }}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
   </div>
 </ion-content>
 
