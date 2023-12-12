@@ -1,11 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
-
 import { RegistrarsePageRoutingModule } from './registrarse-routing.module';
-
 import { RegistrarsePage } from './registrarse.page';
 
 @NgModule({
@@ -13,8 +10,8 @@ import { RegistrarsePage } from './registrarse.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    RegistrarsePageRoutingModule
+    RegistrarsePageRoutingModule,
   ],
-  declarations: [RegistrarsePage]
+  declarations: [RegistrarsePage],
 })
 export class RegistrarsePageModule {}
