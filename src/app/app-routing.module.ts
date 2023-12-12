@@ -21,6 +21,10 @@ const routes: Routes = [
   },  {
     path: 'registrarse',
     loadChildren: () => import('./registrarse/registrarse.module').then( m => m.RegistrarsePageModule)
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
   }
 
 ];

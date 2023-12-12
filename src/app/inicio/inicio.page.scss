@@ -1,0 +1,25 @@
+ion-title, ion-card-title {
+    font-family: 'Lobster', cursive;
+  }  
+  .logo-container {
+    text-align: center;
+  }
+  
+  .round-logo {
+    border-radius: 2%;
+    width: 180px; /* Ajusta el tamaño según sea necesario */
+    height: 170px; /* Ajusta el tamaño según sea necesario */
+  }
+  
+.ion-card-custom-color {
+    
+    background: linear-gradient(to right, #2ecc70b4, #34a6dbda,);
+  }
+  .custom-title {
+    font-size: 24px; /* Tamaño de fuente personalizado */
+    color: #0c0d0ee3; /* Color del título personalizado */
+  }
+  
+  ion-card {
+    background-color: #e6e6e6; /* Color de fondo de la tarjeta */
+  }
