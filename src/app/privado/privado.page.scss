@@ -1,13 +1,22 @@
+ion-title, ion-card-title {
+  font-size: 40px;
+  font-family: 'Lobster', cursive;
+  margin-bottom: 0px; /* Reduce el margen inferior para acercar los títulos a las imágenes */
+}
 ion-select-option {
     color: black;
     padding: 8px 16px;
-    font-size: 16px;
-  }
-  
+    font-size: 50px;
+  } 
   ion-option {
     padding: 8px 16px;
     font-size: 16px;
   }
+  ion-label{
+    font-family: 'Lobster';
+    font-size: 25px;
+  }
+
   .degraa {
     background: linear-gradient(to right, #21f077b4, #34a6dbda);
     font-size: 18px;
