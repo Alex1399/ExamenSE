@@ -6,7 +6,7 @@
 
 <ion-content [fullscreen]="true">
   <div class="ion-padding">
-    <ion-label>Selecciona una pregunta</ion-label>
+    <ion-label>Seleccione una categoría</ion-label>
     <ion-item>
       <ion-select placeholder="pregunta" (ionChange)="selectPregunta($event)" interface="alert">
         <ion-select-option *ngFor="let pregunta of arrayPregunta" [value]="pregunta.id">
@@ -17,7 +17,7 @@
   </div>
 
   <div class="ion-padding">
-    <ion-label>Selecciona una bola</ion-label>
+    <ion-label>Seleccione una pregunta</ion-label>
     <ion-item>
       <ion-select placeholder="balon" [(ngModel)]="selectIdBalon" (ionChange)="selectBalon($event)" interface="alert">
         <ion-select-option *ngFor="let balon of arrayBalon" [value]="balon.id">
@@ -28,7 +28,7 @@
   </div>
 
   <div class="ion-padding">
-    <ion-label>Selecciona una opcion</ion-label>
+    <ion-label>Las opciones a escoger son:</ion-label>
     <ion-item>
       <ion-select placeholder="mesa" [(ngModel)]="selectIdMesa" (ionChange)="selectMesa($event)" interface="alert">
         <ion-select-option *ngFor="let mesa of arrayMesa" [value]="mesa.id">

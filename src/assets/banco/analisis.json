@@ -1,6 +1,7 @@
 {
   "1": {
     "pregunta": "Indicadores Financieros",
+    "solia": "Aquí se busca determinar el margen neto actual de la empresa, que es la utilidad neta expresada como un porcentaje de los ingresos totales.",
     "balones": {
       "101": {
         "balon": "1) ¿Cuál de las siguientes opciones describe mejor el margen neto actual de la empresa?",
@@ -10,15 +11,19 @@
             "mensaje": "¡Mi recomendación seria que la empresa analice sus costos y busque oportunidades para aumentar sus márgenes, como reducir gastos no esenciales o aumentar los precios de sus productos o servicios!"
           },
           "10102": {
-            "nombre": "b) entre 2% y 4%",
-            "mensaje": "¡Seleccionaste Penonome!"
+            "nombre": "b) Entre 2% y 4%",
+            "mensaje": "Se recomienda buscar oportunidades para aumentar los ingresos y optimizar la gestión de gastos."
+          },
+          "10103": {
+            "nombre": "c) Más del 4 %",
+            "mensaje": "¡Felicitaciones por mantener un margen neto saludable!."
           }
         }
       }
     }
   },
   "23": {
-    "pregunta": "baby",
+    "pregunta": "Desafíos Operativos",
     "balones": {
       "2301": {
         "balon": "Rosa",
