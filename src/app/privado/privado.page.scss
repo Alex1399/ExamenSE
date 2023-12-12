@@ -8,9 +8,16 @@ ion-select-option {
     padding: 8px 16px;
     font-size: 16px;
   }
-  .toast-custom-class {
-    background: linear-gradient(to right, #2ecc70b4, #34a6dbda,); // Cambia el fondo del mensaje a un tono más oscuro
-    color: #251c1cce; // Cambia el color del texto a blanco
-    font-size: 18px; // Cambia el tamaño de fuente a 18 puntos
-    text-align: center; // Centra el mensaje horizontalmente
+  .degraa {
+    background: linear-gradient(to right, #21f077b4, #34a6dbda);
+    font-size: 18px;
+    text-align: center;
   }
+  .degradado { 
+    --background: linear-gradient(to right, #3ce7dfb4,#4bec22da, #34a6dbda);
+  }
+  ion-content {
+    --background: linear-gradient(to bottom, #91ff66ef, #5effd7f1);
+  }
+
+ 

@@ -1,29 +1,25 @@
 <ion-header [translucent]="true">
-  <ion-toolbar style="background: linear-gradient(to right, #2ecc71, #dba634, #2c2381);">
+  <ion-toolbar class="degra">
     <ion-title class="custom-title">Bienvenido</ion-title>
   </ion-toolbar>
 </ion-header>
 
-
 <ion-content [fullscreen]="true">
   <div *ngFor="let arf of arfData" class="logo-container">
     <img [src]="'assets/img-se/' + arf.image" alt="Logo" class="round-logo" />
-  </div>
-
-
+  </div>  
   <ion-card class="ion-card-custom-color" *ngFor="let ajm of ajmData">
     <ion-card-header>
       <ion-card-title class="custom-title">Sistema de análisis financiero</ion-card-title>
     </ion-card-header>
-
     <ion-card-content>
       <img [src]="'assets/img-se/' + ajm.image" alt="Imagen" class="responsive-image" />
     </ion-card-content>
   </ion-card>
-    <div class="centered-button">
-      <ion-button shape="round" (click)="irAPrivado()">ACCEDER</ion-button> 
-    </div>
   
+  <div class="centered-button">
+    <ion-button shape="round" (click)="irAPrivado()">ACCEDER</ion-button> 
+  </div>
 </ion-content>
 
 
