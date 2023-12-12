@@ -15,16 +15,8 @@
     </ion-row>
     <ion-row>
       <ion-col class="ion-text-center">
-        <ion-button id="present-alert">Click Me</ion-button>
+        <ion-button (click)="presentAlert()">Registrarse</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
-
-
-<ion-alert
-  trigger="present-alert"
-  header="Please enter your info"
-  [buttons]="alertButtons"
-  [inputs]="alertInputs"
-></ion-alert>

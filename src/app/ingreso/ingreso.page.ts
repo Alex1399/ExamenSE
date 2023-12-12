@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+import { AlertController, AlertInput } from '@ionic/angular';
+
 @Component({
   selector: 'app-ingreso',
   templateUrl: 'ingreso.page.html',
@@ -28,7 +31,7 @@ export class IngresoPage {
       placeholder: 'A little about yourself',
     },
   ];
-  constructor(private http: HttpClient) {} 
+  constructor(private http: HttpClient, private router: Router, private alertController: AlertController) {} 
   ngOnInit() {
     // Llamada HTTP para obtener el archivo JSON de ajm
 
@@ -41,5 +44,26 @@ export class IngresoPage {
         console.error('Error al cargar el archivo JSON (arf)', error);
       }
     );
+  }
+  // Configurar la alerta
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: 'Please enter your info',
+      buttons: this.alertButtons,
+      inputs: this.alertInputs as AlertInput[],
+    });
+
+    await alert.present();
+
+    const { data } = await alert.onDidDismiss();
+
+    // Verificar si se ingresaron datos
+    if (data && data.values) {
+      // Navegar a otra página
+      this.router.navigate(['/privado']).then(() => {
+        // Cerrar la alerta después de la navegación
+        alert.dismiss();
+      });
+    }
   }
 }
