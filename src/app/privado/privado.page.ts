@@ -96,7 +96,8 @@ export class PrivadoPage implements OnInit {
       message: `Mensaje: ${mesa.mensaje}`,
       duration: 2000,
       position: 'middle', // Cambia la posición a 'middle'
-      cssClass: 'toast-custom-class' // Añade una clase CSS personalizada
+      cssClass:'degraa',
+      color:'success'
     });
   
     await toast.present();
