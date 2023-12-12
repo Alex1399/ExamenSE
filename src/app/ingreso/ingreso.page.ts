@@ -12,23 +12,23 @@ export class IngresoPage {
   public alertButtons = ['OK'];
   public alertInputs = [
     {
-      placeholder: 'Name',
+      placeholder: 'Nombre',
     },
     {
-      placeholder: 'Nickname (max 8 characters)',
+      placeholder: 'Apellido (max 8 characters)',
       attributes: {
         maxlength: 8,
       },
     },
     {
       type: 'number',
-      placeholder: 'Age',
+      placeholder: 'Edad',
       min: 1,
       max: 100,
     },
     {
       type: 'textarea',
-      placeholder: 'A little about yourself',
+      placeholder: 'Sobre Ti',
     },
   ];
   constructor(private http: HttpClient, private router: Router, private alertController: AlertController) {} 
@@ -48,7 +48,7 @@ export class IngresoPage {
   // Configurar la alerta
   async presentAlert() {
     const alert = await this.alertController.create({
-      header: 'Please enter your info',
+      header: 'Por Favor Introduce tu Informacion',
       buttons: this.alertButtons,
       inputs: this.alertInputs as AlertInput[],
     });
