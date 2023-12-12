@@ -14,7 +14,7 @@ export class InicioPage implements OnInit {
   constructor(private http: HttpClient, private router: Router) {} 
 
   irAPrivado() {
-    this.router.navigate(['/privado']);
+    this.router.navigate(['/ingreso']);
   }
 
   ngOnInit() {

@@ -1,28 +1,45 @@
 import { Component } from '@angular/core';
-
-
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-ingreso',
-  templateUrl: './ingreso.page.html',
-  styleUrls: ['./ingreso.page.scss'],
+  templateUrl: 'ingreso.page.html',
 })
 export class IngresoPage {
-  pregunta1!: string;
-  pregunta2: string | undefined;
-  pregunta3: string | undefined;
-  pregunta4: string | undefined;
-  pregunta5: string | undefined;
-  pregunta6: string | undefined;
-  pregunta7: string | undefined;
+  public arfData: any;
+  public alertButtons = ['OK'];
+  public alertInputs = [
+    {
+      placeholder: 'Name',
+    },
+    {
+      placeholder: 'Nickname (max 8 characters)',
+      attributes: {
+        maxlength: 8,
+      },
+    },
+    {
+      type: 'number',
+      placeholder: 'Age',
+      min: 1,
+      max: 100,
+    },
+    {
+      type: 'textarea',
+      placeholder: 'A little about yourself',
+    },
+  ];
+  constructor(private http: HttpClient) {} 
+  ngOnInit() {
+    // Llamada HTTP para obtener el archivo JSON de ajm
 
-  enviarRespuestas() {
-    // Aquí puedes enviar las respuestas almacenadas en cada variable
-    console.log('Respuesta 1: ', this.pregunta1);
-    console.log('Respuesta 2: ', this.pregunta2);
-    console.log('Respuesta 3: ', this.pregunta3);
-    console.log('Respuesta 4: ', this.pregunta4);
-    console.log('Respuesta 5: ', this.pregunta5);
-    console.log('Respuesta 6: ', this.pregunta6);
-    console.log('Respuesta 7: ', this.pregunta7);
+    // Llamada HTTP para obtener el archivo JSON de arf
+    this.http.get('/assets/banco/datos.json').subscribe(
+      (data: any) => {
+        this.arfData = data.arf;
+      },
+      (error) => {
+        console.error('Error al cargar el archivo JSON (arf)', error);
+      }
+    );
   }
 }

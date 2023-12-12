@@ -8,4 +8,9 @@ ion-select-option {
     padding: 8px 16px;
     font-size: 16px;
   }
-  
+  .toast-custom-class {
+    background: linear-gradient(to right, #2ecc70b4, #34a6dbda,); // Cambia el fondo del mensaje a un tono más oscuro
+    color: #251c1cce; // Cambia el color del texto a blanco
+    font-size: 18px; // Cambia el tamaño de fuente a 18 puntos
+    text-align: center; // Centra el mensaje horizontalmente
+  }

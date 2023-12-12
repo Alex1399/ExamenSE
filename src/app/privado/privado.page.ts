@@ -95,7 +95,8 @@ export class PrivadoPage implements OnInit {
     const toast = await this.toastController.create({
       message: `Mensaje: ${mesa.mensaje}`,
       duration: 2000,
-      position: 'bottom'
+      position: 'middle', // Cambia la posición a 'middle'
+      cssClass: 'toast-custom-class' // Añade una clase CSS personalizada
     });
   
     await toast.present();

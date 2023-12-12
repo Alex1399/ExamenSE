@@ -1,8 +1,10 @@
+
+
 ion-title, ion-card-title {
     font-family: 'Lobster', cursive;
   }  
   .logo-container {
-    text-align: center;
+     text-align: center;
   }
   
   .round-logo {
@@ -13,9 +15,15 @@ ion-title, ion-card-title {
   
 .ion-card-custom-color {
     
-    background: linear-gradient(to right, #2ecc70b4, #34a6dbda,);
+    background: linear-gradient(to right, #2ecc70b4, #34a6dbda);
   }
-  .custom-title {
+.responsive-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    object-fit: contain; /* Controla cómo la imagen se ajusta al contenedor */
+  }
+.custom-title {
     font-size: 24px; /* Tamaño de fuente personalizado */
     color: #0c0d0ee3; /* Color del título personalizado */
   }
@@ -23,3 +31,31 @@ ion-title, ion-card-title {
   ion-card {
     background-color: #e6e6e6; /* Color de fondo de la tarjeta */
   }
+.centered-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; // Ajusta el margen superior según sea necesario
+  }
+  
+ion-button {
+    --font-family: 'Lobster', cursive;
+    --background: linear-gradient(to right, rgb(237, 193, 0) 0%, rgba(0,99,51,1) 100%);
+    --background-hover: #9ce0be;
+    --background-activated: #88f4be;
+    --background-focused: #88f4be;
+  
+    --color: rgb(224, 212, 217);
+  
+    --border-radius: 15;
+    --border-color: #82c701d2;
+    --border-style: solid;
+    --border-width: 1px;
+  
+    --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+  
+    --ripple-color: deeppink;
+  
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+}

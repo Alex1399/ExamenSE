@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { InicioPage } from './inicio.page';
-import { PrivadoPage } from '../privado/privado.page';
+import { IngresoPage } from '../ingreso/ingreso.page';
 const routes: Routes = [
   {
     path: '',
@@ -10,7 +10,7 @@ const routes: Routes = [
   }, 
   {
     path: 'privado',
-    component: PrivadoPage, // Agrega la ruta para la página "privado"
+    component: IngresoPage, // Agrega la ruta para la página "privado"
   },
 ];
 

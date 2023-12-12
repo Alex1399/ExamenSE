@@ -7,10 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Registrarse', url: '/registrarse', icon: 'enter' },
-    { title: 'Inicio', url: '/ingreso', icon: 'people' },
-    { title: 'Formulario', url: '/privado', icon: 'people' },
     { title: 'INICIO', url: '/inicio', icon: 'people' },
+    { title: 'Acceder', url: '/ingreso', icon: 'people' },
+    { title: 'Formulario', url: '/privado', icon: 'people' },
+    { title: 'Regis', url: '/registrarse', icon: 'enter' },
+    
+    
+    
   ];
   
   constructor() {}

@@ -1,61 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar style="background: linear-gradient(to right, #2ecc71, #dba634, #2c2381);">
+    <ion-title class="custom-title">Bienvenido</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-    <ion-toolbar>
-      <ion-title>Ingreso</ion-title>
-    </ion-toolbar>
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center" *ngFor="let arf of arfData">
+        <div class="logo-container">
+          <img [src]="'assets/img-se/' + arf.image" alt="Logo" class="round-logo" />
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-button id="present-alert">Click Me</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
 
-  
-    <ion-content>
-      <h2>Indicadores Financieros</h2>
-      <ion-list>
-        <ion-radio ng-model="pregunta1" value="a">a) Menos del 2%</ion-radio>
-        <ion-radio ng-model="pregunta1" value="b">b Entre 2% y 4%</ion-radio>
-        <ion-radio ng-model="pregunta1" value="c">c Más del 4%</ion-radio>
-      </ion-list>
-  
-      <h2>Desafíos Operativos</h2>
-      <ion-list>
-        <ion-radio ng-model="pregunta2" value="a">a Producción</ion-radio>
-        <ion-radio ng-model="pregunta2" value="b">b Cadena de suministro</ion-radio>
-        <ion-radio ng-model="pregunta2" value="c">c Gestión de inventario</ion-radio>
-      </ion-list>
-  
-      <h2>Endeudamiento</h2>
-      <ion-list>
-        <ion-radio ng-model="pregunta3" value="a">a Bajo endeudamiento</ion-radio>
-        <ion-radio ng-model="pregunta3" value="b">b Endeudamiento moderado</ion-radio>
-        <ion-radio ng-model="pregunta3" value="c">c Alto endeudamiento</ion-radio>
-      </ion-list>
-  
-      <h2>Liquidez</h2>
-      <ion-list>
-        <ion-radio ng-model="pregunta4" value="a">a Alta</ion-radio>
-        <ion-radio ng-model="pregunta4" value="b">b Moderada</ion-radio>
-        <ion-radio ng-model="pregunta4" value="c">c Baja</ion-radio>
-      </ion-list>
-  
-      <h2>Estrategias de Diversificación</h2>
-      <ion-list>
-        <ion-radio ng-model="pregunta5" value="a">a Muy abierta</ion-radio>
-        <ion-radio ng-model="pregunta5" value="b">b Moderadamente abierta</ion-radio>
-        <ion-radio ng-model="pregunta5" value="c">c Poco abierta</ion-radio>
-      </ion-list>
-  
-      <h2>Tecnologías Innovadoras</h2>
-      <ion-list>
-        <ion-radio ng-model="pregunta6" value="a">a Altamente favorable</ion-radio>
-        <ion-radio ng-model="pregunta6" value="b">b Moderadamente favorable</ion-radio>
-        <ion-radio ng-model="pregunta6" value="c">c Poco favorable</ion-radio>
-      </ion-list>
-  
-      <h2>Costos y Eficiencia</h2>
-      <ion-list>
-        <ion-radio ng-model="pregunta7" value="a">a Regular</ion-radio>
-        <ion-radio ng-model="pregunta7" value="b">b Ocasionalmente</ion-radio>
-        <ion-radio ng-model="pregunta7" value="c">c No realiza análisis de costos</ion-radio>
-      </ion-list>
-  
-      
-  
-      <button class="button button-full button-positive" ng-click="enviarRespuestas()">Enviar Respuestas</button>
-    </ion-content>
- 
+
+<ion-alert
+  trigger="present-alert"
+  header="Please enter your info"
+  [buttons]="alertButtons"
+  [inputs]="alertInputs"
+></ion-alert>
