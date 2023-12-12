@@ -30,7 +30,7 @@
   <div class="ion-padding">
     <ion-label>Las opciones a escoger son:</ion-label>
     <ion-item>
-      <ion-select placeholder="mesa" [(ngModel)]="selectIdMesa" (ionChange)="selectMesa($event)" interface="alert">
+      <ion-select placeholder="opcionsss" [(ngModel)]="selectIdMesa" (ionChange)="selectMesa($event)" interface="alert">
         <ion-select-option *ngFor="let mesa of arrayMesa" [value]="mesa.id">
           {{ mesa.nombre }}
         </ion-select-option>

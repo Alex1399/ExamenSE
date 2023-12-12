@@ -22,19 +22,139 @@
       }
     }
   },
-  "23": {
+  "2": {
     "pregunta": "Desafíos Operativos",
+    "solia": "Esta sección se enfoca en identificar el área o departamento en la empresa que presenta el mayor desafío operativo",
     "balones": {
-      "2301": {
-        "balon": "Rosa",
+      "201": {
+        "balon": "¿Qué área considera que presenta el mayor desafío operativo?",
         "mesas": {
-          "230101": {
-            "nombre": "Anton",
-            "mensaje": "¡Seleccionaste Anton!"
+          "20101": {
+            "nombre": "a) Producción",
+            "mensaje": "Si tu mayor desafío operativo se encuentra en la producción, te recomendaría implementar mejoras en los procesos de producción y optimizar la utilización de recursos."
           },
-          "230102": {
-            "nombre": "Sol",
-            "mensaje": "¡Seleccionaste Sol!"
+          "20102": {
+            "nombre": "b) Cadena de suministro",
+            "mensaje": "Si su mayor desafío operativo es su cadena de suministro, le recomendamos construir alianzas estratégicas con sus proveedores para optimizar la gestión de inventario."
+          },
+          "20103": {
+            "nombre": "c) Gestión de inventario",
+            "mensaje": "Si tu mayor desafío operativo se encuentra en la gestión de inventario, te recomendaría implementar un sistema eficiente de control de inventario y minimizar los costos asociados."
+          }
+        }
+      }
+    }
+  },
+  "3": {
+    "pregunta": "Endeudamiento",
+    "solia": "Se evalúa la situación financiera en términos de endeudamiento, la cual busca clasificar el nivel de endeudamiento actual de la empresa",
+    "balones": {
+      "301": {
+        "balon": "En términos de endeudamiento, ¿cómo clasificaría la situación actual de la empresa?",
+        "mesas": {
+          "30101": {
+            "nombre": "a)Endeudamien bajo ",
+            "mensaje": "Basandonos en tu respuesta, podrías considerar estrategias de financiamiento para impulsar el crecimiento de la empresa"
+          },
+          "20102": {
+            "nombre": "b)Endeudamiento moderado",
+            "mensaje": " Nuestra recomendación sería evaluar regularmente la capacidad de pago y mantener un equilibrio adecuado entre la deuda y los activos."
+          },
+          "20103": {
+            "nombre": "c)Endeudamiento Alto",
+            "mensaje": "La opción  sería recomendarle tomar medidas para reducir la deuda y mejorar la liquidez."
+          }
+        }
+      }
+    }
+  },
+  "4": {
+    "pregunta": "Liquidez",
+    "solia": "La liquidez en una empresa se refiere a la capacidad que tiene para hacer frente a sus obligaciones en el corto plazo.",
+    "balones": {
+      "401": {
+        "balon": "¿Comó nos puede describir la liquidez actual de la empresa?",
+        "mesas": {
+          "40101": {
+            "nombre": "a) Alta ",
+            "mensaje": "Lo recomendable es mantener buenas prácticas de gestión de efectivo y considerar invertir los excedentes de liquidez"
+          },
+          "40102": {
+            "nombre": "b) Moderada",
+            "mensaje": "Sería recomendable monitorear y planificar cuidadosamente los flujos de efectivo para evitar problemas de liquidez."
+          },
+          "40103": {
+            "nombre": "c) Baja",
+            "mensaje": "Si la liquidez actual de la empresa es baja, deberías revisar y ajustar las políticas de crédito y cobranza, así como buscar alternativas de financiamiento"
+          }
+        }
+      }
+    }
+  },
+  "5": {
+    "pregunta": "Estrategias de Diversificación",
+    "solia": "En este apartado se indaga sobre la disposición de la empresa a explorar áreas de negocio nuevas para diversificar sus ingresos. ",
+    "balones": {
+      "501": {
+        "balon": "¿Qué tan abierta está la empresa a explorar nuevas áreas de negocio para diversificar ingresos?",
+        "mesas": {
+          "50101": {
+            "nombre": "a) Muy abierta",
+            "mensaje": "La recomendación sería realizar un análisis exhaustivo de mercado y buscar oportunidades para diversificar los ingresos."
+          },
+          "40102": {
+            "nombre": "b) Moderadamente abierta",
+            "mensaje": "Gracias por tu respuesta, nuestra recomendación es explorar nuevas áreas de negocio de manera gradual y evaluar su viabilidad."
+          },
+          "40103": {
+            "nombre": "c) Poco abierta",
+            "mensaje": "La sugerencia es considerar la importancia de la diversificación para mitigar riesgos y buscar formas de expandir su cartera de productos o servicios."
+          }
+        }
+      }
+    }
+  },
+  "6": {
+    "pregunta": "Tecnologías Innovadoras",
+    "solia": "Aquí se busca conocer la actitud de la empresa hacia la adopción de tecnologías innovadoras ",
+    "balones": {
+      "601": {
+        "balon": "¿Cuál de las siguientes opciones describe mejor la postura de la empresa hacia la adopción de tecnologías innovadoras?",
+        "mesas": {
+          "60101": {
+            "nombre": "a) Altamente favorable",
+            "mensaje": "¡Que bueno que tengan esa postura.! La sugerencia seria siempre estar a la vanguardia de las tecnologías y considerar inversiones en innovación para mejorar la competitividad"
+          },
+          "60102": {
+            "nombre": "b) Moderadamente favorable",
+            "mensaje": "La tecnologia cada dia va avanzando y por eso se le recomienda evaluar el retorno de inversión de las tecnologías antes de adoptarlas y buscar soluciones que se ajusten a sus necesidades específicas. "
+          },
+          "60103": {
+            "nombre": "c) Poco favorable",
+            "mensaje": "Deberian analizar los beneficios potenciales de la adopción de tecnologías innovadoras y considerar cómo podrían mejorar la eficiencia y la experiencia del cliente."
+          }
+        }
+      }
+    }
+  },
+  "7": {
+    "pregunta": "Costos y Eficiencia:",
+    "solia": "En esta sección se plantea si la empresa realiza análisis detallados de costos y con qué frecuencia. ",
+    "balones": {
+      "701": {
+        "balon": "¿De qué forma la empresa realiza detalles del análisis de costos? ",
+        "mesas": {
+          "60101": {
+            "nombre": "a) Regular",
+            "mensaje": "Se sugiere seguir realizando análisis detallados de costos para identificar oportunidades de ahorro y optimización"
+          },
+          "60102": {
+            "nombre": "b) Ocasional",
+            "mensaje": "Deberia asegurarse de que los análisis de costos se realicen al menos una vez al año, para un mejor control. "
+          },
+          "60103": {
+            "nombre": "c) No realiza análisis de costos",
+            "mensaje": "Se debe considerar la posibilidad de implementar un programa de análisis de costos."
           }
         }
       }
