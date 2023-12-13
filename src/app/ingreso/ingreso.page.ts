@@ -15,9 +15,9 @@ export class IngresoPage {
       placeholder: 'Nombre',
     },
     {
-      placeholder: 'Apellido (max 8 characters)',
+      placeholder: 'Apellido',
       attributes: {
-        maxlength: 8,
+        maxlength: 25,
       },
     },
     {
@@ -28,7 +28,7 @@ export class IngresoPage {
     },
     {
       type: 'textarea',
-      placeholder: 'Sobre Ti',
+      placeholder: 'Nombre de la Empresa',
     },
   ];
   constructor(private http: HttpClient, private router: Router, private alertController: AlertController) {} 

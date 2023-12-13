@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import banco from 'src/assets/banco/analisis.json';
 import { ToastController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-privado',
@@ -18,7 +19,11 @@ export class PrivadoPage implements OnInit {
   public selectIdPregunta: number = 0;
 
   codigoPre: any;
-  constructor(private toastController: ToastController) {}
+  constructor(private toastController: ToastController, private router: Router) {}
+  irAInicio() {
+    this.router.navigate(['/inicio']);
+  }
+
 
   ngOnInit() {
     for (var codigoPregunta in this.analisis) {
@@ -93,10 +98,10 @@ export class PrivadoPage implements OnInit {
   async presentToast(mesa: any) {
     const toast = await this.toastController.create({
       message: `${mesa.mensaje}`,
-      duration: 5000,
+      duration: 6000,
       position: 'middle',
-      cssClass: 'degraa',
-      color: 'danger',
+      color: "success",
+      cssClass: 'custom-toast'
     });
 
     await toast.present();

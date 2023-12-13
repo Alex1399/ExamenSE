@@ -3,7 +3,13 @@ ion-title, ion-card-title {
   font-family: 'Lobster', cursive;
   margin-bottom: 0px; /* Reduce el margen inferior para acercar los títulos a las imágenes */
 }
+
+ion-select{
+  font-family: 'Lobster', cursive;
+  font-size: 24px;
+}
 ion-select-option {
+    font-family: 'Lobster', cursive;
     color: black;
     padding: 8px 16px;
     font-size: 50px;
@@ -28,5 +34,29 @@ ion-select-option {
   ion-content {
     --background: linear-gradient(to bottom, #91ff66ef, #5effd7f1);
   }
-
- 
+  ion-button {
+    --font-family: 'Lobster', cursive;
+    --background: linear-gradient(to left, rgb(237, 193, 0) 0%, rgba(0,99,51,1) 100%);
+    --background-hover: #9ce0be;
+    --background-activated: #88f4be;
+    --background-focused: #88f4be;
+    --color: rgb(224, 212, 217);
+    --border-radius: 15;
+    --border-color: #82c701d2;
+    --border-style: solid;
+    --border-width: 1px;
+    --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+    --ripple-color: deeppink;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+  }
+  .centered-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; // Ajusta el margen superior según sea necesario
+  }
+  .custom-toast {
+    font-family: 'lobster';
+    font-size: 26px;
+  }
