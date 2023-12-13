@@ -33,9 +33,9 @@ export class IngresoPage {
   ];
   constructor(private http: HttpClient, private router: Router, private alertController: AlertController) {} 
   ngOnInit() {
-    // Llamada HTTP para obtener el archivo JSON de ajm
+    
 
-    // Llamada HTTP para obtener el archivo JSON de arf
+   
     this.http.get('/assets/banco/datos.json').subscribe(
       (data: any) => {
         this.arfData = data.arf;
@@ -45,7 +45,6 @@ export class IngresoPage {
       }
     );
   }
-  // Configurar la alerta
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'Por Favor Introduce tu Informacion',
@@ -57,11 +56,11 @@ export class IngresoPage {
 
     const { data } = await alert.onDidDismiss();
 
-    // Verificar si se ingresaron datos
+    
     if (data && data.values) {
-      // Navegar a otra página
+      
       this.router.navigate(['/privado']).then(() => {
-        // Cerrar la alerta después de la navegación
+        
         alert.dismiss();
       });
     }

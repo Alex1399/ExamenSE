@@ -18,7 +18,6 @@ export class InicioPage implements OnInit {
   }
 
   ngOnInit() {
-    // Llamada HTTP para obtener el archivo JSON de ajm
     this.http.get('/assets/banco/datos.json').subscribe(
       (data: any) => {
         this.ajmData = data.ajm;
@@ -28,7 +27,6 @@ export class InicioPage implements OnInit {
       }
     );
 
-    // Llamada HTTP para obtener el archivo JSON de arf
     this.http.get('/assets/banco/datos.json').subscribe(
       (data: any) => {
         this.arfData = data.arf;

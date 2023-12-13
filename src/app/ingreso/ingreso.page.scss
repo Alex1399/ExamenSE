@@ -4,9 +4,9 @@
   }
 .round-logo {
     border-radius: 2%;
-    width: 180px; /* Ajusta el tamaño según sea necesario */
-    height: 180px; /* Ajusta el tamaño según sea necesario */
-  }
+    width: 180px; 
+    height: 180px; 
+}
 ion-toolbar{
   color:#df472c
 }
@@ -15,8 +15,8 @@ ion-radio-group {
     background-color: #df472c;
     border: 2px solid #8d1966;
     border-radius: 8px;
-    display: block; /* Cambia el display a bloque para que ocupe el ancho completo */
-    padding: 10px; /* Añade un poco de espacio interior para mayor claridad */
+    display: block; 
+    padding: 10px; 
     }
     
     ion-radio {
@@ -24,8 +24,8 @@ ion-radio-group {
     --border-radius: 4px;
     --height: 30px;
     --width: 30px;
-    display: block; /* Cambia el display a bloque para que aparezca en una línea separada */
-    margin-bottom: 10px; /* Añade un espacio entre las opciones */
+    display: block; 
+    margin-bottom: 10px; 
     }
     
     ion-radio .radio-icon {

@@ -53,14 +53,14 @@
         "balon": "En términos de endeudamiento, ¿cómo clasificaría la situación actual de la empresa?",
         "mesas": {
           "30101": {
-            "nombre": "a)Endeudamien bajo ",
+            "nombre": "a)Endeudamiento bajo ",
             "mensaje": "Basandonos en tu respuesta, podrías considerar estrategias de financiamiento para impulsar el crecimiento de la empresa"
           },
-          "20102": {
+          "30102": {
             "nombre": "b)Endeudamiento moderado",
             "mensaje": " Nuestra recomendación sería evaluar regularmente la capacidad de pago y mantener un equilibrio adecuado entre la deuda y los activos."
           },
-          "20103": {
+          "30103": {
             "nombre": "c)Endeudamiento Alto",
             "mensaje": "La opción  sería recomendarle tomar medidas para reducir la deuda y mejorar la liquidez."
           }
@@ -96,17 +96,17 @@
     "solia": "En este apartado se indaga sobre la disposición de la empresa a explorar áreas de negocio nuevas para diversificar sus ingresos. ",
     "balones": {
       "501": {
-        "balon": "¿Qué tan abierta está la empresa a explorar nuevas áreas de negocio para diversificar ingresos?",
+        "balon": "¿Qué disposición tendria la empresa a explorar nuevas áreas de negocio para diversificar ingresos?",
         "mesas": {
           "50101": {
             "nombre": "a) Muy abierta",
             "mensaje": "La recomendación sería realizar un análisis exhaustivo de mercado y buscar oportunidades para diversificar los ingresos."
           },
-          "40102": {
+          "50102": {
             "nombre": "b) Moderadamente abierta",
             "mensaje": "Gracias por tu respuesta, nuestra recomendación es explorar nuevas áreas de negocio de manera gradual y evaluar su viabilidad."
           },
-          "40103": {
+          "50103": {
             "nombre": "c) Poco abierta",
             "mensaje": "La sugerencia es considerar la importancia de la diversificación para mitigar riesgos y buscar formas de expandir su cartera de productos o servicios."
           }
@@ -144,15 +144,15 @@
       "701": {
         "balon": "¿De qué forma la empresa realiza detalles del análisis de costos? ",
         "mesas": {
-          "60101": {
+          "70101": {
             "nombre": "a) Regular",
             "mensaje": "Se sugiere seguir realizando análisis detallados de costos para identificar oportunidades de ahorro y optimización"
           },
-          "60102": {
+          "70102": {
             "nombre": "b) Ocasional",
             "mensaje": "Deberia asegurarse de que los análisis de costos se realicen al menos una vez al año, para un mejor control. "
           },
-          "60103": {
+          "70103": {
             "nombre": "c) No realiza análisis de costos",
             "mensaje": "Se debe considerar la posibilidad de implementar un programa de análisis de costos."
           }
